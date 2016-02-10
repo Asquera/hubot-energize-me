@@ -2,7 +2,7 @@
 
 Coffee and Energy. No Cigarettes.
 
-See [`src/energize-me.coffee`](src/energize-me.coffee) for full documentation.
+See [`src/energizeme.coffee`](src/energizeme.coffee) for full documentation.
 
 ## Installation
 
