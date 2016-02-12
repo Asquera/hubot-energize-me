@@ -4,28 +4,29 @@
   "version": "0.0.0",
   "author": "BriocheBerlin <brigitte.markmann@asquera.de>",
   "license": "MIT",
-
   "keywords": "hubot, hubot-scripts, edimax, smartplug",
-
   "repository": {
     "type": "git",
     "url": "git://github.com/hubot-scripts/hubot-energize-me.git"
   },
-
   "bugs": {
     "url": "https://github.com/hubot-scripts/hubot-energize-me/issues"
   },
-
   "dependencies": {
+    "bluebird": "^3.1.1",
+    "dotenv": "^2.0.0",
+    "edimax-smartplug": "0.0.10",
+    "lodash": "^3.10.1",
+    "xmldom": "^0.1.19",
+    "xpath": "0.0.9"
   },
-
   "peerDependencies": {
     "hubot": "2.x"
   },
-
   "devDependencies": {
     "chai": "^2.1.1",
     "coffee-script": "1.6.3",
+    "dotenv": "^2.0.0",
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
     "grunt-contrib-watch": "~0.6.1",
@@ -37,17 +38,7 @@
     "sinon": "^1.13.0",
     "sinon-chai": "^2.7.0"
   },
-
-  "dependencies": {
-    "bluebird": "^3.1.1",
-    "lodash": "^3.10.1",
-    "xmldom": "^0.1.19",
-    "xpath": "0.0.9",
-    "edimax-smartplug": "0.0.10"
-  },
-
   "main": "index.coffee",
-
   "scripts": {
     "test": "grunt test"
   }
