@@ -11,16 +11,19 @@
 #   hubot get schedule for coffee machine     - shows schedule for coffee machine
 #   hubot get device info for coffee machine  - shows edimax smart plug info
 #
-# Notes:
-#   <optional notes required for the script>
-#
 # Author:
 #   BriocheBerlin <brigitte.markmann@asquera.de>
 
 
 smartplug = require("edimax-smartplug")
-config = require("../config")
-options = config
+require('dotenv').config path: '../hubot-energize-me/options.env'
+options =
+  timeout: parseInt(process.env.TIMEOUT, 10)
+  name: process.env.NAME
+  host: process.env.HOST
+  username: process.env.USERNAME
+  password: process.env.PASSWORD
+
 x = Date.now()
 
 module.exports = (robot) ->
